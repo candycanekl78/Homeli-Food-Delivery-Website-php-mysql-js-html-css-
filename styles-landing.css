@@ -1,0 +1,300 @@
+/* CSS File: styles.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 43px;
+  background-color: #ffffff;
+
+}
+.logo {
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+}
+nav .active {
+  font-weight: bold;
+  
+}
+
+/* signin and signup*/
+
+.sign-up {
+  background: none;
+  color: #ff5511cc;
+  border: 1px solid black;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+
+.log-in {
+  background: #FF7B25;
+  color: white;
+  padding: 10px 25px;
+  border:none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+
+.search input {
+  width: 300px;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ff5511cc;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #fef7ed;
+  overflow: hidden; /* Prevents layout issues */
+}
+.hero .content {
+  max-width: 300px;
+}
+.hero .tag {
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.order-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff5511cc;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  
+}
+
+.specials {
+  font-size: 14px;
+  color: #2ecc71;
+  text-decoration: none;
+  font-weight: bold;
+}
+.image {
+  flex-shrink: 0; /* Prevents the image from resizing */
+  margin-right: -20px; /* Adjust this to remove the gap */
+}
+
+.image img {
+  width: 700px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  position: relative; /* Allows the image to be moved independently */
+  top: 80px; /* Moves the image down slightly (adjust this value as needed) */
+  left: 20px;
+}
+.family{
+  flex-shrink: 0;
+  gap: 5px;
+}
+.family img{
+
+  width: 1425px;
+  height: 800px;
+  opacity: 0.8;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers everything horizontally */
+  gap: 20px; /* Adds space between the image and content */
+}
+
+.image-wrapper {
+  position: relative; /* Required for absolute positioning of the heading */
+}
+
+.image-wrapper img {
+  width: 1430; /* Makes the image responsive */
+  height: 800px;
+  display: block;
+  opacity: 0.8;
+}
+
+.image-heading {
+  position: absolute; /* Positions the heading relative to the image */
+  top: 50%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); /* Fine-tunes centering */
+  color: white; /* Text color */
+  font-size: 36px; /* Text size */
+  font-weight: bold; /* Text weight */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow for better readability */
+  text-align: center; /* Centers the text */
+}
+
+.image-content {
+  font-size: 18px; /* Content text size */
+  color: #333; /* Content text color */
+  text-align: center; /* Centers the content */
+  max-width: 600px; /* Limits the content width */
+}
+
+
+/* CSS File (styles.css) */
+.food-inspiration {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.food-inspiration h2 {
+  font-size: 35px;
+  font-weight:lighter;
+  margin-bottom: 20px;
+}
+
+.food-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.food-item {
+  text-align: center;
+}
+
+.food-item img {
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.food-item img:hover {
+  transform: scale(1.1);
+}
+
+.food-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0f2f1;
+}
+
+footer {
+    background-color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 180px;
+}
+
+.brand h2 {
+    color: #34a77f;
+    font-size: 24px;
+}
+
+.brand p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.social-icons i {
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    color: #555;
+}
+
+
+/* Updated styles for proper alignment */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+}

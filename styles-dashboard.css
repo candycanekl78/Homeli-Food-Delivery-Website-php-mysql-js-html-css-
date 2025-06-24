@@ -1,0 +1,710 @@
+
+
+/* CSS File: styles.css */
+* {
+  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  
+  
+}
+header {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 43px;
+  background-color: #ffffff;
+  
+
+}
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+nav a {
+   font-family: 'Montserrat', sans-serif;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  
+}
+nav a:hover{
+  color: #FF7B25;
+  transform: translateY(-5px);
+
+}
+nav .active {
+  font-weight: bold;
+  color: #ff6600;
+  
+  
+}
+
+/* signin and signup*/
+
+.sign-up {
+  background: none;
+  color: #1b1716cc;
+  border: 1px solid black;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+
+.log-in {
+  background: #FF7B25;
+  color: white;
+  padding: 5px 10px;
+  border:none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cart-icon {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.cart-icon:hover {
+  color: #ff7b25;
+}
+
+
+.search input {
+  width: 300px;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ff5511cc;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #fef7ed;
+  overflow: hidden; /* Prevents layout issues */
+  margin-left: 80px;
+
+}
+.hero .content {
+  max-width: 300px;
+}
+.hero .tag {
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+ 
+line-height: 1.3;
+  
+  
+}
+.hero p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.order-btn {
+  
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff5511cc;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  
+}
+
+.specials {
+  font-size: 14px;
+  color: #2ecc71;
+  text-decoration: none;
+  font-weight: bold;
+}
+.image {
+  flex-shrink: 0; /* Prevents the image from resizing */
+  margin-right: -20px; /* Adjust this to remove the gap */
+}
+
+.image img {
+  width: 700px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  position: relative; /* Allows the image to be moved independently */
+  top: 80px; /* Moves the image down slightly (adjust this value as needed) */
+  left: 20px;
+}
+.family{
+  flex-shrink: 0;
+  gap: 5px;
+}
+.family img{
+
+  width: 1425px;
+  height: 800px;
+  opacity: 0.8;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers everything horizontally */
+  gap: 20px; /* Adds space between the image and content */
+}
+
+.image-wrapper {
+  position: relative; /* Required for absolute positioning of the heading */
+}
+
+.image-wrapper img {
+  width: 1430; /* Makes the image responsive */
+  height: 800px;
+  display: block;
+  opacity: 0.8;
+}
+
+.image-heading {
+  position: absolute; /* Positions the heading relative to the image */
+  top: 50%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); /* Fine-tunes centering */
+  color: white; /* Text color */
+  font-size: 36px; /* Text size */
+  font-weight: bold; /* Text weight */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow for better readability */
+  text-align: center; /* Centers the text */
+}
+
+.image-content {
+  font-size: 18px; /* Content text size */
+  color: #333; /* Content text color */
+  text-align: center; /* Centers the content */
+  max-width: 600px; /* Limits the content width */
+}
+
+
+/* CSS File (styles.css) */
+.food-inspiration {
+  
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.food-inspiration h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  font-weight:normal;
+  margin-bottom: 20px;
+}
+
+.food-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.food-item {
+  
+  text-align: center;
+}
+
+.food-item img {
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.food-item img:hover {
+  transform: scale(1.1);
+}
+
+.food-item p {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0f2f1;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 80px 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+    
+    
+}
+.footer-container a{
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 180px;
+}
+
+.brand h2 {
+  
+    color: #34a77f;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.brand p {
+  font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.social-icons i {
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    color: #555;
+}
+
+
+/* Updated styles for proper alignment */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.hamburger-icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(28, 26, 26);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100vh;
+  background-color: #ffffffdc;
+  color: white;
+  transition: right 0.3s ease-in-out;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar .close-icon {
+  font-size: 22px;
+  align-self: flex-end;
+  cursor: pointer;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.sidebar-content a {
+  color: rgb(10, 10, 10);
+  text-decoration: none;
+  margin: 15px 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-content a i {
+  margin-right: 10px;
+}
+
+.sidebar-content .logout-link {
+  margin-top: auto;
+  color: #ff4d4d;
+  
+}
+    /* Overlay for sidebar dimming */
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      display: none;
+  }
+
+  /* Logout Confirmation Modal */
+  #logoutModal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px 30px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      z-index: 1001;
+      display: none;
+  }
+
+  #logoutModal h3 {
+      margin-top: 0;
+  }
+
+  #logoutModal button {
+      margin: 10px 8px 0;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+  }
+
+  #logoutModal .confirm {
+      background-color: #e74c3c;
+      color: white;
+      border-radius: 20px;
+  }
+
+  #logoutModal .cancel {
+      background-color: #ccc;
+      border-radius: 20px;
+  }
+
+  /* Sidebar on top of overlay */
+  .sidebar {
+      z-index: 1002;
+  }
+
+  .fa-shopping-cart {
+    font-size: 20px;         /* Change icon size */
+    color: #000000;             /* Change icon color */
+    padding: 10px;           /* Add space around icon */
+    cursor: pointer;         /* Make cursor a pointer */
+    transition: 0.3s ease;   /* Smooth hover effect */
+    
+    
+}
+
+.fa-shopping-cart:hover {
+    color: #ff6600;          /* Change color on hover */
+    transform: scale(1.1);   /* Slight zoom effect on hover */
+}
+.top-bar {
+  display: flex;
+  justify-content: flex-end; /* moves content to right */
+  padding: 10px;
+}
+
+/* Cart Icon with Badge */
+.cart-icon-container {
+  position: relative;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff6b6b;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+/* Cart Popup */
+.cart-popup {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 380px;
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+  transition: right 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-popup.open {
+  right: 0;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.close-cart {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.location-selector {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  
+}
+
+.location-selector select {
+ 
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.cart-items {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+.cart-item {
+  display: flex;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.cart-item-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cart-item-price {
+  color: #ff6b6b;
+  margin-bottom: 10px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-btn {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-value {
+  margin: 0 10px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.remove-item {
+  color: #ff6b6b;
+  cursor: pointer;
+  margin-left: auto;
+  align-self: flex-start;
+}
+
+.cart-summary {
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.summary-row.total {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.checkout-btn {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.checkout-btn:hover {
+  background: #ff5252;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 40px 0;
+  color: #888;
+}
+.features {
+  position: relative;
+  text-align: center;
+  padding: 50px;
+  background-color: transparent; /* transparent to see the pseudo-element */
+  overflow: hidden;
+}
+
+/* Add a blurred background using a pseudo-element */
+.features::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fef7ed;
+  backdrop-filter: blur(10px); /* Apply the blur */
+  z-index: 0;
+}
+
+/* Make sure the actual content stays on top and unblurred */
+.features > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.features h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: orange;
+  filter:blur(none)
+}
+
+.feature-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  backdrop-filter: blur(10px);
+}
+
+.feature {
+  max-width: 300px;
+}
+
+.feature img {
+  width: 130px;
+  height: auto;
+}
+
+.feature h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.feature p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #555;
+}
+
